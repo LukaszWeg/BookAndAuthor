@@ -18,7 +18,10 @@ public class Book {
     @JoinTable(name = "author_book", joinColumns = @JoinColumn(name = "book_id"), inverseJoinColumns = @JoinColumn(name = "author_id"))
     Set<Author> authors = new HashSet<>();
 
+   public Book()
+   {
 
+   }
 
     public Book(String title, String isbn, Publisher publisher, Set<Author> authors) {
 
